@@ -1,0 +1,22 @@
+安装ubuntu系统，解压到opt目录，依次输入命令
+cd /opt/modify
+ls
+chmod +x modify.sh
+chmod +x mksquashfs
+chmod +x padjffs2
+chmod +x unsquashfs
+解包命令,把需要解包的文件放modify文件夹，重命名rom.trx,运行
+./modify.sh e rom.trx
+
+解包之后，修改
+可以把解包之后的文件，复制出来，进windows修改，换回去时，注意文件权限。比较文件差异用Beyond Compare方便
+也可以直接在ubuntu系统下修改，文件比较安装meld
+
+重新打包命令
+./modify.sh c newrom.trx
+
+
+
+
+
+
